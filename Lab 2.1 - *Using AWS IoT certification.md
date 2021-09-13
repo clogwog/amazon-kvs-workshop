@@ -106,7 +106,7 @@ You can use the following trust policy JSON for the iam-policy-document.json:
 
 2. Next, you must attach a permissions policy to the IAM role you created above. This permissions policy allows selective access control (a subset of supported operations) for an AWS resource. In this case, the AWS resource is the video stream to which you want your camera to send data. In other words, once all the configuration steps are complete, this camera will be able to send data only to this video stream.
 ```
-aws --profile kvsiam put-role-policy --role-name KVSCameraCertificateBasedIAMRole --policy-name KVSCameraIAMPolicy --policy-document 'file://iam-permission-document.json' 
+aws --profile kvs iam put-role-policy --role-name KVSCameraCertificateBasedIAMRole --policy-name KVSCameraIAMPolicy --policy-document 'file://iam-permission-document.json' 
 ```
 
 ​		You can use the following IAM policy JSON for the iam-permission-document.json:
