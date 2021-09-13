@@ -143,7 +143,7 @@ aws --profile kvs iot create-role-alias --role-alias KvsCameraIoTRoleAlias --rol
 The following sample command creates a policy for IoT called KvsCameraIoTPolicy.
 
 ```
-aws --profile kvsiot create-policy --policy-name KvsCameraIoTPolicy --policy-document 'file://iot-policy-document.json' 
+aws --profile kvs iot create-policy --policy-name KvsCameraIoTPolicy --policy-document 'file://iot-policy-document.json' 
 ```
 You can use the following command to create the iot-policy-document.json document JSON:
 
